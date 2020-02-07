@@ -1,0 +1,27 @@
+$ ftpping --help
+usage: ftpping.py [-h] [-t HOST] [-a] [-u USER] [-p PASSWD]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t HOST, --host HOST  IP address or netblock. No DNS name support yet.
+  -a, --anonymous       Use anonymous login
+  -u USER, --user USER  Username for ftp login
+  -p PASSWD, --passwd PASSWD
+                        Password for ftp login
+
+
+
+$ ftpping.py -t 192.168.13.0/24 --anonymous
+Reply from 192.168.13.2: ftp-user=ftper rtt=0:00:04.113046
+No response from 192.168.13.3: ftp-user=Anonymous error=No route to host
+Reply from 192.168.13.140: ftp-user=ftper rtt=0:00:03.845046
+No response from 192.168.13.3: ftp-user=Anonymous error=530 Permission denied.
+
+
+$ ftpping.py --host 192.168.13.140 --user ftper --pass p@$s
+Reply from 192.168.13.140: ftp-user=ftper rtt=0:00:04.101212
+
+
+$ ftpping.py --host 192.168.13.140,192.168.13.2 --user ftper --pass p@$s
+Reply from 192.168.13.140: ftp-user=ftper rtt=0:00:04.101212
+Reply from 192.168.13.140: ftp-user=ftper rtt=0:00:04.234331
