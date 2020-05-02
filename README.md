@@ -5,7 +5,7 @@ Ping hosts in the network running FTP service
 
 ### What?
 
-Ping-esque program with FTP as connection method to discover FTP servers in the network. An `nmap -p 20,21 target` kin, but with a very basic functionality.
+Ping-esque program with FTP as connection method to discover FTP servers in the network. An `nmap -p 20,21 <target>` kin, but with a very basic functionality.
 
 
 ### Why?
@@ -16,7 +16,8 @@ Primarily, for understanding (and to later abusing) the FTP protocol and its imp
 ### Installation
 
 ```
-$ git clone https://github.com/DeepakDevanand/FTPping.git && cd $_
+$ git clone https://github.com/DeepakDevanand/FTPping.git
+$ cd FTPping/
 
 $ chmod +x ftpping.py
 
