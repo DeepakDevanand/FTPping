@@ -55,8 +55,8 @@ Reply from 192.168.13.140: ftp-user=ftper rtt=0:00:04.234331
 
 ### To-do
 
-- [] FTPS, SSL/TLS support during connection attempts
-- [] Performant pinging in a large IP address space (multi-threading)
-- [] DNS name support for target specification
-- [] Option to generate a custom log report
-- [] Option to read from a file having usernames and passwords
+- [ ] FTPS, SSL/TLS support during connection attempts
+- [ ] Performant pinging in a large IP address space (multi-threading)
+- [ ] DNS name support for target specification
+- [ ] Option to generate a custom log report
+- [ ] Option to read from a file having usernames and passwords
